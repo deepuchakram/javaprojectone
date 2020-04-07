@@ -1,0 +1,7 @@
+---
+applications:
+        -name: cicd-jenkins-poc
+         instances: 1
+         memory: 800m
+         path: target/cicd-jenkins-poc-0.0.1-SNAPSHOT.jar
+
