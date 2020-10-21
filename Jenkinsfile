@@ -16,13 +16,13 @@ pipeline {
     }
     stage('Build') {
        steps {
-         sh 'npm install'
-         sh 'npm run bowerInstall'
+         shell 'npm install'
+         shell 'npm run bowerInstall'
        }
     }
     stage('Test') {
       steps {
-        sh 'npm test'
+        shell 'npm test'
       }
     }
     stage('Building image') {
